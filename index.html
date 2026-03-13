@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziore Beauty | Premium Skincare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royalPurple: '#4A148C',
+                        luxuryGold: '#D4AF37',
+                        softLavender: '#F3E5F5'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-softLavender font-sans text-gray-800">
+
+    <nav class="bg-royalPurple text-white py-4 px-8 flex justify-between items-center shadow-lg sticky top-0 z-50">
+        <div class="text-3xl font-serif font-bold text-luxuryGold tracking-widest">ZIORE BEAUTY</div>
+        <div>
+            <button id="langBtn" class="border border-luxuryGold text-luxuryGold px-4 py-1 rounded hover:bg-luxuryGold hover:text-royalPurple transition duration-300">EN / KR</button>
+        </div>
+    </nav>
+
+    <header class="swiper mySwiper h-screen w-full relative">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(74, 20, 140, 0.7), rgba(0, 0, 0, 0.5)), url('p1HD.png');">
+                <div class="text-center text-white p-8">
+                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 text-luxuryGold">The Royal Collection</h1>
+                    <p class="text-xl md:text-2xl mb-8 font-light tracking-wide">Experience South Korean Glass Skin</p>
+                    <a href="#products" class="bg-luxuryGold text-royalPurple px-8 py-3 rounded-full font-semibold hover:bg-white transition duration-300 shadow-xl">Shop Now</a>
+                </div>
+            </div>
+            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(74, 20, 140, 0.7), rgba(0, 0, 0, 0.5)), url('p3HD.png');">
+                <div class="text-center text-white p-8">
+                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 text-luxuryGold">Advanced Probioderm</h1>
+                    <p class="text-xl md:text-2xl mb-8 font-light tracking-wide">Lift, Firm, and Rejuvenate</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-8 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+            <div class="w-full h-96 bg-royalPurple rounded-t-full shadow-2xl flex items-center justify-center overflow-hidden border-4 border-luxuryGold">
+                <p class="text-luxuryGold font-serif italic text-xl">Founder's Portrait Here</p>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <h2 class="text-4xl font-serif font-bold text-royalPurple mb-4">The Visionary Behind the Glow</h2>
+            <h3 class="text-2xl text-luxuryGold mb-6 font-serif">Syed Zaheer ul Hassan (Zaheer Gillani)</h3>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                "Skincare is not just a routine; it is an art of preserving your natural elegance."
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                Born in the culturally rich city of Lahore, Pakistan, and residing in the skincare capital of the world, South Korea, since 2011, Zaheer Gillani brings over a decade of deep immersion in advanced K-Beauty innovations. Ziore Beauty is the perfect bridge between his eastern roots of natural care and the cutting-edge dermatological science of South Korea. 
+                <br><br>
+                With a deep understanding of cosmetics, he founded Ziore Beauty with one simple mission: to provide uncompromising, pro-level luxury skincare that delivers visible results.
+            </p>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-serif font-bold text-center text-royalPurple mb-16">Our Premium Products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p1HD.png" alt="3D Lifting Cream" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">3D Lifting Cream 50ml</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$31.09</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('3D Lifting Cream 50ml', 31.09)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p2HD.png" alt="Eye & Wrinkle Cream" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Eye & Wrinkle Cream 25ml</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$19.53</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Eye & Wrinkle Cream 25ml', 19.53)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p3HD.png" alt="Collagen Serum Set" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Collagen Serum Special Set</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$32.16</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Collagen Serum Special Set', 32.16)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p4HD.png" alt="Gel Mask Sheet" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Collagen Gel Mask Sheet</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$12.82</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Collagen Gel Mask Sheet', 12.82)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p5HD.png" alt="Cica Cream Mist" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Repair Cica Cream Mist</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$39.66</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Repair Cica Cream Mist', 39.66)">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
+                    <div class="overflow-hidden">
+                        <img src="p6HD.png" alt="Cream & Band Set" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">3D Cream & Lifting Band Set</h3>
+                        <p class="text-luxuryGold font-bold text-2xl mb-4">$45.87</p>
+                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('3D Cream & Band Set', 45.87)">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-royalPurple text-white text-center py-8">
+        <p>&copy; 2026 Ziore Beauty. All rights reserved.</p>
+        <p class="text-sm mt-2 text-gray-300">Free Delivery in South Korea | International Inquiries: +82 10-2486-1442</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Slider with Fade Effect
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+
+        // Placeholder function for Order Form (Agley step mein hum iska Modal banayenge)
+        function openOrderForm(productName, price) {
+            alert("Order form opening for: " + productName + "\nIska code hum next step mein dalenge!");
+        }
+    </script>
+</body>
+</html>
