@@ -6,142 +6,156 @@
     <title>Ziore Beauty | Premium Skincare</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        royalPurple: '#4A148C',
-                        luxuryGold: '#D4AF37',
-                        softLavender: '#F3E5F5'
+                        deepElegance: '#2A1B38', /* Ek bohat soft, premium dark midnight color */
+                        luxuryGold: '#C5A059',   /* Soft matte gold */
+                        softCream: '#FAF8F5',    /* Khubsurat off-white background */
+                        blushCard: '#FFFFFF'
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif'],
+                        sans: ['Montserrat', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-softLavender font-sans text-gray-800">
+<body class="bg-softCream font-sans text-gray-800 antialiased">
 
-    <nav class="bg-royalPurple text-white py-4 px-8 flex justify-between items-center shadow-lg sticky top-0 z-50">
-        <div class="text-3xl font-serif font-bold text-luxuryGold tracking-widest">ZIORE BEAUTY</div>
+    <nav class="bg-deepElegance text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-md sticky top-0 z-50">
+        <div class="text-3xl font-serif font-bold text-luxuryGold tracking-widest cursor-pointer">ZIORE BEAUTY</div>
         <div>
-            <button id="langBtn" class="border border-luxuryGold text-luxuryGold px-4 py-1 rounded hover:bg-luxuryGold hover:text-royalPurple transition duration-300">EN / KR</button>
+            <button id="langBtn" class="border border-luxuryGold text-luxuryGold px-5 py-1.5 rounded-full text-sm font-medium hover:bg-luxuryGold hover:text-deepElegance transition duration-300">EN / KR</button>
         </div>
     </nav>
 
-    <header class="swiper mySwiper h-screen w-full relative">
+    <header class="swiper mySwiper h-[85vh] w-full relative">
         <div class="swiper-wrapper">
-            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(74, 20, 140, 0.7), rgba(0, 0, 0, 0.5)), url('p1HD.png');">
-                <div class="text-center text-white p-8">
-                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 text-luxuryGold">The Royal Collection</h1>
-                    <p class="text-xl md:text-2xl mb-8 font-light tracking-wide">Experience South Korean Glass Skin</p>
-                    <a href="#products" class="bg-luxuryGold text-royalPurple px-8 py-3 rounded-full font-semibold hover:bg-white transition duration-300 shadow-xl">Shop Now</a>
+            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(42, 27, 56, 0.4), rgba(0, 0, 0, 0.6)), url('p1HD.jpg');">
+                <div class="text-center text-white p-8 max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-white drop-shadow-lg">The Royal Collection</h1>
+                    <p class="text-xl md:text-2xl mb-10 font-light tracking-widest text-gray-200">EXPERIENCE SOUTH KOREAN GLASS SKIN</p>
+                    <a href="#products" class="bg-luxuryGold text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-deepElegance transition duration-300">Shop The Secret</a>
                 </div>
             </div>
-            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(74, 20, 140, 0.7), rgba(0, 0, 0, 0.5)), url('p3HD.png');">
-                <div class="text-center text-white p-8">
-                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-4 text-luxuryGold">Advanced Probioderm</h1>
-                    <p class="text-xl md:text-2xl mb-8 font-light tracking-wide">Lift, Firm, and Rejuvenate</p>
+            <div class="swiper-slide bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(42, 27, 56, 0.4), rgba(0, 0, 0, 0.6)), url('p3HD.jpg');">
+                <div class="text-center text-white p-8 max-w-4xl">
+                    <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 text-white drop-shadow-lg">Advanced Probioderm</h1>
+                    <p class="text-xl md:text-2xl mb-10 font-light tracking-widest text-gray-200">LIFT, FIRM, AND REJUVENATE</p>
+                    <a href="#products" class="bg-luxuryGold text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-deepElegance transition duration-300">Discover More</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-20 px-8 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2">
-            <div class="w-full h-96 bg-royalPurple rounded-t-full shadow-2xl flex items-center justify-center overflow-hidden border-4 border-luxuryGold">
-                <p class="text-luxuryGold font-serif italic text-xl">Founder's Portrait Here</p>
+    <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2 w-full flex justify-center">
+            <div class="relative group">
+                <div class="absolute -inset-2 bg-gradient-to-r from-luxuryGold to-gray-300 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="owner.jpeg" alt="Syed Zaheer ul Hassan" class="relative w-full max-w-md h-auto object-cover rounded-2xl shadow-xl transform transition duration-500 hover:scale-[1.02]">
             </div>
         </div>
-        <div class="md:w-1/2">
-            <h2 class="text-4xl font-serif font-bold text-royalPurple mb-4">The Visionary Behind the Glow</h2>
-            <h3 class="text-2xl text-luxuryGold mb-6 font-serif">Syed Zaheer ul Hassan (Zaheer Gillani)</h3>
-            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+        <div class="lg:w-1/2 w-full text-center lg:text-left">
+            <h2 class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-3">The Mastermind</h2>
+            <h2 class="text-4xl md:text-5xl font-serif text-deepElegance mb-4 leading-tight">The Visionary Behind <br><span class="text-luxuryGold italic">the Glow</span></h2>
+            <h3 class="text-xl text-gray-800 mb-8 font-medium">Syed Zaheer ul Hassan (Zaheer Gillani)</h3>
+            <p class="text-lg leading-relaxed mb-6 text-gray-800 font-serif italic border-l-2 border-luxuryGold pl-6">
                 "Skincare is not just a routine; it is an art of preserving your natural elegance."
             </p>
-            <p class="text-gray-600 leading-relaxed">
+            <p class="text-gray-600 leading-relaxed text-[15px] mb-6 font-light">
                 Born in the culturally rich city of Lahore, Pakistan, and residing in the skincare capital of the world, South Korea, since 2011, Zaheer Gillani brings over a decade of deep immersion in advanced K-Beauty innovations. Ziore Beauty is the perfect bridge between his eastern roots of natural care and the cutting-edge dermatological science of South Korea. 
-                <br><br>
-                With a deep understanding of cosmetics, he founded Ziore Beauty with one simple mission: to provide uncompromising, pro-level luxury skincare that delivers visible results.
+            </p>
+            <p class="text-gray-600 leading-relaxed text-[15px] font-light">
+                With a profound understanding of premium cosmetics and a passion for perfection, he founded Ziore Beauty with one simple mission: to provide uncompromising, pro-level luxury skincare that delivers visible, age-defying results.
             </p>
         </div>
     </section>
 
-    <section id="products" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-8">
-            <h2 class="text-4xl font-serif font-bold text-center text-royalPurple mb-16">Our Premium Products</h2>
+    <section id="products" class="py-24 bg-blushCard border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-serif text-deepElegance mb-6">The Royal Collection</h2>
+                <div class="w-16 h-[2px] bg-luxuryGold mx-auto"></div>
+            </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p1HD.png" alt="3D Lifting Cream" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 relative">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="p1HD.jpg" alt="3D Lifting Cream" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">3D Lifting Cream 50ml</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$31.09</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('3D Lifting Cream 50ml', 31.09)">Buy Now</button>
-                    </div>
-                </div>
-
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p2HD.png" alt="Eye & Wrinkle Cream" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Eye & Wrinkle Cream 25ml</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$19.53</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Eye & Wrinkle Cream 25ml', 19.53)">Buy Now</button>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">3D Lifting Cream 50ml</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">Firming & Restoring</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$31.09</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('3D Lifting Cream 50ml', 31.09)">ADD TO CART</button>
                     </div>
                 </div>
 
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p3HD.png" alt="Collagen Serum Set" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="p2HD.jpg" alt="Eye & Wrinkle Cream" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Collagen Serum Special Set</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$32.16</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Collagen Serum Special Set', 32.16)">Buy Now</button>
-                    </div>
-                </div>
-
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p4HD.png" alt="Gel Mask Sheet" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Collagen Gel Mask Sheet</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$12.82</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Collagen Gel Mask Sheet', 12.82)">Buy Now</button>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">Eye & Wrinkle Cream</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">Targeted Care (25ml)</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$19.53</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('Eye & Wrinkle Cream 25ml', 19.53)">ADD TO CART</button>
                     </div>
                 </div>
 
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p5HD.png" alt="Cica Cream Mist" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="p3HD.jpg" alt="Collagen Serum Set" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">Repair Cica Cream Mist</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$39.66</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('Repair Cica Cream Mist', 39.66)">Buy Now</button>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">Collagen Serum Set</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">Intense Moisture Boost</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$32.16</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('Collagen Serum Special Set', 32.16)">ADD TO CART</button>
                     </div>
                 </div>
 
-                <div class="group border border-gray-200 rounded-xl overflow-hidden hover:shadow-2xl transition duration-500 bg-softLavender">
-                    <div class="overflow-hidden">
-                        <img src="p6HD.png" alt="Cream & Band Set" class="w-full h-80 object-cover group-hover:scale-110 transition duration-700 opacity-90 group-hover:opacity-100">
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="p4HD.jpg" alt="Gel Mask Sheet" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-serif font-bold text-royalPurple mb-2">3D Cream & Lifting Band Set</h3>
-                        <p class="text-luxuryGold font-bold text-2xl mb-4">$45.87</p>
-                        <button class="bg-royalPurple text-white px-6 py-2 rounded hover:bg-luxuryGold transition duration-300 w-full" onclick="openOrderForm('3D Cream & Band Set', 45.87)">Buy Now</button>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">Collagen Gel Mask Set</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">Hydrogel Facial Care (5+1)</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$12.82</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('Collagen Gel Mask Sheet Set', 12.82)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="p5HD.jpg" alt="Cica Cream Mist" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">Repair Cica Cream Mist</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">Skin Barrier Protection (120ml)</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$39.66</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('Repair Cica Cream Mist', 39.66)">ADD TO CART</button>
+                    </div>
+                </div>
+
+                <div class="group bg-softCream rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500">
+                    <div class="overflow-hidden bg-white p-6">
+                        <img src="P6HD.jpg" alt="Cream & Band Set" class="w-full aspect-square object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-8 text-center border-t border-gray-100">
+                        <h3 class="text-xl font-serif text-deepElegance mb-2 line-clamp-1">3D Cream & Band Set</h3>
+                        <p class="text-gray-500 text-xs tracking-wide uppercase mb-4">V-Line Contouring Duo</p>
+                        <p class="text-deepElegance font-medium text-2xl mb-6">$45.87</p>
+                        <button class="bg-deepElegance text-white px-8 py-3 rounded-full text-sm font-semibold hover:bg-luxuryGold transition duration-300 w-full shadow-md tracking-wider" onclick="openOrderForm('3D Cream & Band Set', 45.87)">ADD TO CART</button>
                     </div>
                 </div>
 
@@ -149,28 +163,158 @@
         </div>
     </section>
 
-    <footer class="bg-royalPurple text-white text-center py-8">
-        <p>&copy; 2026 Ziore Beauty. All rights reserved.</p>
-        <p class="text-sm mt-2 text-gray-300">Free Delivery in South Korea | International Inquiries: +82 10-2486-1442</p>
+    <footer class="bg-deepElegance text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left mb-12">
+            <div>
+                <h4 class="text-2xl font-serif text-luxuryGold mb-4 tracking-widest">ZIORE BEAUTY</h4>
+                <p class="text-gray-400 font-light text-sm leading-relaxed">The art of preserving your natural elegance with advanced South Korean skincare technology.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-4 tracking-wide">Customer Support</h4>
+                <p class="text-gray-400 font-light text-sm mb-2">WhatsApp: +82 10-2486-1442</p>
+                <p class="text-gray-400 font-light text-sm">Email: support@ziorebeauty.com</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-4 tracking-wide">Shipping Info</h4>
+                <p class="text-luxuryGold font-medium text-sm mb-2 flex items-center justify-center md:justify-start gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    Free Delivery in South Korea
+                </p>
+                <p class="text-gray-400 font-light text-xs leading-relaxed">International shipping available. Contact support for exact courier charges to your country.</p>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-xs border-t border-gray-700 pt-8 tracking-widest">
+            <p>&copy; 2026 ZIORE BEAUTY. ALL RIGHTS RESERVED.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"></script>
+    <div id="orderModal" class="hidden fixed inset-0 bg-black bg-opacity-60 z-[100] flex justify-center items-center overflow-y-auto pt-24 pb-10 px-4 backdrop-blur-sm transition-all duration-300">
+        <div class="bg-white rounded-xl w-full max-w-2xl overflow-hidden shadow-2xl relative">
+            <div class="bg-softCream border-b border-gray-200 py-5 px-8 flex justify-between items-center">
+                <h3 class="text-xl font-serif text-deepElegance tracking-wide">Complete Your Order</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-deepElegance text-3xl transition duration-200">&times;</button>
+            </div>
+            
+            <div class="p-8">
+                <div class="mb-8 border-b border-gray-100 pb-6 flex flex-col md:flex-row justify-between items-center bg-softCream p-5 rounded-lg">
+                    <h4 class="text-lg font-serif text-deepElegance w-full md:w-1/2 mb-4 md:mb-0" id="productNameDisplay">Product Name</h4>
+                    <div class="flex items-center justify-between w-full md:w-1/2 gap-6">
+                        <div class="flex items-center border border-gray-300 rounded-full bg-white overflow-hidden">
+                            <button onclick="updateQty(-1)" class="px-4 py-1 hover:bg-gray-50 text-lg font-medium text-gray-600 transition">-</button>
+                            <input type="text" id="qtyInput" value="1" readonly class="w-10 text-center font-medium text-gray-800 outline-none bg-transparent">
+                            <button onclick="updateQty(1)" class="px-4 py-1 hover:bg-gray-50 text-lg font-medium text-gray-600 transition">+</button>
+                        </div>
+                        <div class="text-2xl font-medium text-deepElegance" id="totalPriceDisplay">$0.00</div>
+                    </div>
+                </div>
+
+                <form id="checkoutForm" class="space-y-4">
+                    <h5 class="text-sm font-bold text-gray-400 tracking-widest uppercase mb-2">Delivery Details</h5>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Full Name" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                        <input type="tel" placeholder="Mobile Number (Active on WhatsApp)" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                    </div>
+                    <input type="email" placeholder="Email Address" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                    <input type="text" placeholder="Complete Street/House Address" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <input type="text" placeholder="City" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                        <input type="text" placeholder="Postal / Zip Code" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                        <input type="text" placeholder="Country" required class="w-full border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-luxuryGold bg-gray-50 focus:bg-white text-sm transition">
+                    </div>
+
+                    <div class="bg-softCream p-6 rounded-lg mt-6 border border-gray-200 relative">
+                        <h5 class="font-serif text-lg text-deepElegance mb-2">Advance Bank Transfer</h5>
+                        <p class="text-gray-500 text-xs mb-4">Please transfer the total amount to the official account to confirm your order.</p>
+                        
+                        <div class="bg-white p-4 rounded border border-gray-100 shadow-sm mb-4">
+                            <p class="text-[10px] text-gray-400 uppercase tracking-widest">Account Title</p>
+                            <p class="text-base font-medium text-deepElegance mb-2">Syed Zaheer ul Hassan</p>
+                            <div class="flex justify-between items-center border-t border-gray-100 pt-2 mt-2">
+                                <div>
+                                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Bank Name</p>
+                                    <p class="text-sm font-medium text-gray-800">Bank Name Here</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-[10px] text-gray-400 uppercase tracking-widest">Account Number</p>
+                                    <p class="text-sm font-medium text-gray-800 tracking-wider">0000-0000-0000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <label class="block text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide">Upload Payment Receipt</label>
+                        <input type="file" required class="w-full text-sm border border-gray-200 rounded p-2 bg-white cursor-pointer file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-xs file:font-medium file:bg-deepElegance file:text-white hover:file:bg-luxuryGold hover:file:text-deepElegance transition" accept="image/*">
+                    </div>
+
+                    <div class="text-center text-xs text-gray-500 mt-2 bg-gray-50 py-3 rounded border border-gray-100">
+                        <span class="font-medium text-deepElegance flex items-center justify-center gap-1">
+                            <svg class="w-4 h-4 text-luxuryGold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Free Delivery in South Korea
+                        </span> 
+                        <span class="block mt-1">International charges will be finalized via WhatsApp support.</span>
+                    </div>
+
+                    <button type="button" onclick="alert('Iska backend connection hum next step mein banayenge!')" class="w-full bg-deepElegance text-white font-serif text-lg py-4 rounded hover:bg-luxuryGold transition duration-300 mt-4 tracking-widest">PLACE ROYAL ORDER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         // Initialize Slider with Fade Effect
         var swiper = new Swiper(".mySwiper", {
             effect: "fade",
             autoplay: {
-                delay: 3500,
+                delay: 4000,
                 disableOnInteraction: false,
             },
             loop: true,
         });
 
-        // Placeholder function for Order Form (Agley step mein hum iska Modal banayenge)
+        // Modal Logic
+        let currentPrice = 0;
+        let currentQty = 1;
+
         function openOrderForm(productName, price) {
-            alert("Order form opening for: " + productName + "\nIska code hum next step mein dalenge!");
+            currentPrice = price;
+            currentQty = 1;
+            document.getElementById('productNameDisplay').innerText = productName;
+            document.getElementById('qtyInput').value = currentQty;
+            updateTotalDisplay();
+            document.getElementById('orderModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
         }
+
+        function closeModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+
+        function updateQty(change) {
+            let newQty = currentQty + change;
+            if (newQty >= 1 && newQty <= 10) {
+                currentQty = newQty;
+                document.getElementById('qtyInput').value = currentQty;
+                updateTotalDisplay();
+            }
+        }
+
+        function updateTotalDisplay() {
+            let total = (currentPrice * currentQty).toFixed(2);
+            document.getElementById('totalPriceDisplay').innerText = "$" + total;
+        }
+
+        // Language Switcher Placeholder
+        let isKorean = false;
+        document.getElementById('langBtn').addEventListener('click', function() {
+            isKorean = !isKorean;
+            if (isKorean) {
+                this.innerText = "KR / EN";
+                alert("Korean language translation system will be integrated here!");
+            } else {
+                this.innerText = "EN / KR";
+            }
+        });
     </script>
 </body>
 </html>
